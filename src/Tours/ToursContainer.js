@@ -25,6 +25,7 @@ const ToursContainer = () => {
             // 'const toursData' the data we just fetched from the the api or 'const response'
             const toursData = await response.json()            
             setLoading(false)
+            // setTours(toursData) - receiving data from 'toursData' and in the useState the word 'tours' will automatically have the data coming from 'setTours'
             setTours(toursData)
         } catch(error){
             setLoading(false)
@@ -47,9 +48,21 @@ const ToursContainer = () => {
         )
     }
 
+    // if the 'tours'(parameter from useState and take note the 'tours' parameter would'nt had a data if was'nt from 'fetchToursData' inside the block the 'setTours(toursData)'(from the useState) is fetching the data) has no left(which been remove by clicking the 'Not Interested' button) it will just grab the 'fetchToursData' to display the fetched data again
+    if(tours.length === 0){
+        return (
+            <main>
+                <div className="title">
+                    <h2>No Tours Left</h2>
+                    <button className="btn" onClick={fetchToursData}>Refresh</button>
+                </div>
+            </main>
+        )
+    }
+
     return (
         <main>
-            {/* tours={tours} - will pass as props since 'setTours(toursData)' from 'fetchToursData' all its data from 'setTours(toursData)' has been fetched/grabbed */}
+            {/* tours={tours} - the word 'tours'(a parameter) is from the 'useState' and 'tours' will pass as props since 'setTours(toursData)' from 'fetchToursData' has fetched/grab the data */}
             {/* tours={tours} - will pass it to the 'List' Component because the 'tours={tours}' will expect the 'List' Component to display all the data using map method */}
             <Tours tours={tours} removeTours={removeTours}/>
         </main>
