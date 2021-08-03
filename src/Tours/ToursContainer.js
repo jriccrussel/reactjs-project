@@ -11,7 +11,7 @@ const ToursContainer = () => {
 
     // Remove Function that we need to pass it to the List Component
     const removeTours = (id) => {
-        const newTours = tours.filter((tourId) => tourId !== id)
+        const newTours = tours.filter((tourId) => tourId.id !== id)
         setTours(newTours)
     }
 
@@ -38,6 +38,7 @@ const ToursContainer = () => {
         fetchToursData()
     }, [])
 
+    // loading component will render first as the browser refreshes
     if(loading){
         return(
             <main>
