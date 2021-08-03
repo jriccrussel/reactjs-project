@@ -11,11 +11,13 @@ const List = ({id, image, info, price, name, removeTours}) => {
                     <h4>{name}</h4>
                     <h4 className="tour-price">${price}</h4>
                 </div>
+                {/* `${info.substring(0, 200)}...` - displays on the 1st 200 words */}
                 <p>{readMore ? info : `${info.substring(0, 200)}...`}
                     <button onClick={() => setReadMore(!readMore)}>
                         {readMore ? 'Show Less' : 'Read More'}
                     </button>
                 </p>
+                {/* removeTours prop(coming from the 'ToursContainer') goes here */}
                 <button className="delete-btn" onClick={() => removeTours(id)}>Not Interested</button>
             </footer>
         </article>

@@ -21,7 +21,7 @@ const ToursContainer = () => {
         
         // Network Errors using Try Catch Method
         try{
-            const response = await fetch(url)
+            const response = await fetch(url) 
             // 'const toursData' the data we just fetched from the the api or 'const response'
             const toursData = await response.json()            
             setLoading(false)
@@ -49,6 +49,8 @@ const ToursContainer = () => {
 
     return (
         <main>
+            {/* tours={tours} - will pass as props since 'setTours(toursData)' from 'fetchToursData' all its data from 'setTours(toursData)' has been fetched/grabbed */}
+            {/* tours={tours} - will pass it to the 'List' Component because the 'tours={tours}' will expect the 'List' Component to display all the data using map method */}
             <Tours tours={tours} removeTours={removeTours}/>
         </main>
     )
