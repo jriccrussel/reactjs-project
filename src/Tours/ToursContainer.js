@@ -9,6 +9,12 @@ const ToursContainer = () => {
     const [loading, setLoading] = useState(true)
     const [tours, setTours] = useState([])
 
+    // Remove Function that we need to pass it to the List Component
+    const removeTours = (id) => {
+        const newTours = tours.filter((tourId) => tourId !== id)
+        setTours(newTours)
+    }
+
     // Fetching the data from 'const = url'
     const fetchToursData = async () => {
         setLoading(true)
@@ -42,7 +48,7 @@ const ToursContainer = () => {
 
     return (
         <main>
-            <Tours />
+            <Tours tours={tours} removeTours={removeTours}/>
         </main>
     )
 }
