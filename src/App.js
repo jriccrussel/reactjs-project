@@ -2,8 +2,13 @@
 // import Birthday from './BirthdayReminder/Birthday'
 
 // Tours Project
-import ToursContainer from './Tours/ToursContainer'
+// import ToursContainer from './Tours/ToursContainer'
 
+// Reviews Project
+// import ReviewsContainer from "./Reviews/ReviewsContainer";
+
+// Accordion Project
+import Accordion from "./Accordion/Accordion";
 
 function App() {
   return (
@@ -12,7 +17,13 @@ function App() {
       {/* <Birthday/> */}
 
       {/* Tours Project */}
-      <ToursContainer />
+      {/* <ToursContainer /> */}
+
+      {/* Reviews Project */}
+      {/* <ReviewsContainer /> */}
+
+      {/* Accordion Project */}
+      <Accordion />
     </div>
   );
 }
