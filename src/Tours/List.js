@@ -4,6 +4,8 @@ const List = ({id, image, info, price, name, removeTours}) => {
     const [readMore, setReadMore] = useState(false)
 
     return (
+        // the id, image, info, price, name props are same as tourItem.id, tourItem.image, tourItem.info, tourItem.price, tourItem.name
+        // the word "tourItem" is from the 'Tours' component 
         <article className="single-tour">
             <img src={image} alt={name} />
             <footer>

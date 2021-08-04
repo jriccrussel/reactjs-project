@@ -10,6 +10,8 @@ const Tours = ({tours, removeTours}) => {
             <div>
                 {
                     tours.map((tourItem) => {
+                        // {...tourItem} - will get all image, info, price, name properties
+                        // removeTours={removeTours} - receive as a prop from 'ToursContainer' component and before it pass it to the 'List' Component
                         return <List key={tourItem.id} {...tourItem} removeTours={removeTours}></List>
                     })
                 }
