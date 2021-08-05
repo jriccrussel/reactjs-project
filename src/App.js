@@ -11,7 +11,11 @@
 // import Accordion from "./Accordion/Accordion";
 
 // Food Menu
-import FoodContainer from "./FoodMenu/FoodContainer";
+// import FoodContainer from "./FoodMenu/FoodContainer";
+
+// Tabs
+import TabsContainer from "./Tabs/TabsContainer";
+
 
 function App() {
   return (
@@ -29,7 +33,10 @@ function App() {
       {/* <Accordion /> */}
 
       {/* Food Menu */}
-      <FoodContainer />
+      {/* <FoodContainer /> */}
+
+      {/* Tabs */}
+      <TabsContainer />
     </div>
   );
 }
