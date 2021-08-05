@@ -32,6 +32,8 @@ const TabsContainer = () => {
         )
     }
 
+    // Grabbing the data coming from the 'url' or the API
+    // the object destructing below has to be below after the 'if(loading)' condition if not it will throw an error
     const {company, dates, duties, title} = jobs[value]
     
     return (
