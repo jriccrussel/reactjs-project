@@ -307,7 +307,7 @@ main {
     z-index: 5;
     
     &::before{
-      content: url('../assets/img/dots1.png');
+      content: url(/assets/img/dots1.png);
       position: absolute;      
       left: -18%;
       top: -22%;
@@ -320,7 +320,7 @@ main {
     }
 
     &::after{
-      content: url('../assets/img/dots1.png');
+      content: url(/assets/img/dots1.png);
       position: absolute;      
       right: -9%;
       bottom: -19%;

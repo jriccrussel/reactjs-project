@@ -8,7 +8,10 @@
 // import ReviewsContainer from "./Reviews/ReviewsContainer";
 
 // Accordion Project
-import Accordion from "./Accordion/Accordion";
+// import Accordion from "./Accordion/Accordion";
+
+// Food Menu
+import FoodContainer from "./FoodMenu/FoodContainer";
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
       {/* <ReviewsContainer /> */}
 
       {/* Accordion Project */}
-      <Accordion />
+      {/* <Accordion /> */}
+
+      {/* Food Menu */}
+      <FoodContainer />
     </div>
   );
 }
