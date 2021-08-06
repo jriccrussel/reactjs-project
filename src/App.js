@@ -19,7 +19,11 @@
 // Sliders
 // import Slider from "./Slider/Slider";
 // import SliderAlt from "./Slider/SliderAlt";
-import SliderAltSecond from "./Slider/SliderAltSecond";
+// import SliderAltSecond from "./Slider/SliderAltSecond";
+
+// Lorem Ipsum Generator
+import LoremContainer from './LoremGenerator/LoremContainer'
+
 
 function App() {
   return (
@@ -45,7 +49,10 @@ function App() {
       {/* Sliders*/}
       {/* <Slider /> */}
       {/* <SliderAlt /> */}
-      <SliderAltSecond />
+      {/* <SliderAltSecond /> */}
+      
+      {/* Lorem Ipsum Generator */}
+      <LoremContainer />
 
     </div>
   );
