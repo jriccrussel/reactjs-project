@@ -16,9 +16,10 @@
 // Tabs
 // import TabsContainer from "./Tabs/TabsContainer";
 
-// Slider
-import Slider from "./Slider/Slider";
-import SliderAlt from "./Slider/SliderAlt";
+// Sliders
+// import Slider from "./Slider/Slider";
+// import SliderAlt from "./Slider/SliderAlt";
+import SliderAltSecond from "./Slider/SliderAltSecond";
 
 function App() {
   return (
@@ -41,9 +42,10 @@ function App() {
       {/* Tabs */}
       {/* <TabsContainer /> */}
 
-      {/* Slider */}
-      <Slider />
-      <SliderAlt />
+      {/* Sliders*/}
+      {/* <Slider /> */}
+      {/* <SliderAlt /> */}
+      <SliderAltSecond />
 
     </div>
   );

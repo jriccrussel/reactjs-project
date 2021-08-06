@@ -6,7 +6,7 @@ const url = 'https://course-api.com/react-tabs-project'
 
 const TabsContainer = () => {
     const [loading, setLoading] = useState(true)
-    // the useState 'jobs' parameter is equal to the whole array properies from 'url' which is an API
+    // the useState 'jobs' parameter is equal to the whole array or the entire array
     const [jobs, setJobs] = useState([])
     // the useState 'value' parameter is equal to index
     const [value, setValue] = useState(0)
@@ -14,6 +14,7 @@ const TabsContainer = () => {
     const fetchDataJobs = async () => {
         const response = await fetch(url)
         const NewFetchedJobsData = await response.json()
+        // 'NewFetchedJobsData' has been passed to the 'setJobs(NewFetchedJobsData)' therefore the 'jobs' state(from useState) has access of the 'url' or the API data
         setJobs(NewFetchedJobsData)
         setLoading(false)
     }
@@ -34,6 +35,8 @@ const TabsContainer = () => {
 
     // Grabbing the data coming from the 'url' or the API
     // the object destructing below has to be below after the 'if(loading)' condition if not it will throw an error
+    // 'jobs' state is now holding the data from the 'url' or API
+    //  '[value]' state is refering to the value inside of 'jobs' which is {company, dates, duties, title} 
     const {company, dates, duties, title} = jobs[value]
     
     return (
