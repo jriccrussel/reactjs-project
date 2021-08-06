@@ -14,8 +14,11 @@
 // import FoodContainer from "./FoodMenu/FoodContainer";
 
 // Tabs
-import TabsContainer from "./Tabs/TabsContainer";
+// import TabsContainer from "./Tabs/TabsContainer";
 
+// Slider
+import Slider from "./Slider/Slider";
+import SliderAlt from "./Slider/SliderAlt";
 
 function App() {
   return (
@@ -36,7 +39,12 @@ function App() {
       {/* <FoodContainer /> */}
 
       {/* Tabs */}
-      <TabsContainer />
+      {/* <TabsContainer /> */}
+
+      {/* Slider */}
+      <Slider />
+      <SliderAlt />
+
     </div>
   );
 }

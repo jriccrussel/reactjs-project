@@ -6,7 +6,7 @@ const url = 'https://course-api.com/react-tabs-project'
 
 const TabsContainer = () => {
     const [loading, setLoading] = useState(true)
-    // the useState 'jobs' parameter is equal to the whole array properies of 'url' which is an API
+    // the useState 'jobs' parameter is equal to the whole array properies from 'url' which is an API
     const [jobs, setJobs] = useState([])
     // the useState 'value' parameter is equal to index
     const [value, setValue] = useState(0)
