@@ -20,9 +20,10 @@
 // import Slider from "./Slider/Slider";
 // import SliderAlt from "./Slider/SliderAlt";
 // import SliderAltSecond from "./Slider/SliderAltSecond";
+import SliderAltThird from './Slider/SliderAltThird'
 
 // Lorem Ipsum Generator
-import LoremContainer from './LoremGenerator/LoremContainer'
+// import LoremContainer from './LoremGenerator/LoremContainer'
 
 
 function App() {
@@ -50,9 +51,10 @@ function App() {
       {/* <Slider /> */}
       {/* <SliderAlt /> */}
       {/* <SliderAltSecond /> */}
+      <SliderAltThird/>
       
       {/* Lorem Ipsum Generator */}
-      <LoremContainer />
+      {/* <LoremContainer /> */}
 
     </div>
   );
