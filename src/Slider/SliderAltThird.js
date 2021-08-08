@@ -1,10 +1,15 @@
 import { useState, useEffect} from 'react'
 import axios from "axios";
+import SlideChild from './SlideChild';
 
 const SliderAltThird = () => {
-    const url = 'https://the-sneaker-database.p.rapidapi.com/sneakers'
+    const url = 'https://fakestoreapi.com/products'
 
     const [sneakers, setSneakers] = useState([])
+
+    useEffect(() => {
+        fetchData()
+    }, [])
 
     const fetchData = () => {
         const product =  {
@@ -18,24 +23,16 @@ const SliderAltThird = () => {
         }
     
         axios.request(product).then(function (response) {
-            console.log(response.data.results);
-            setSneakers(response.data.results)
+            console.log(response.data);
+            setSneakers(response.data)
         }).catch(function (error) {
             console.error(error);
         })
     }
-
-    useEffect(() => {
-        fetchData()
-    }, [sneakers])
     
     return (
         <div>
-            {sneakers.map((kicks) => {
-                return (
-                    <img src={kicks.image} alt=""/>
-                )
-            })}
+            <SlideChild props={sneakers} />
         </div>
     )
 }
