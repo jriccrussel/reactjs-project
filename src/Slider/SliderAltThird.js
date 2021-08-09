@@ -5,7 +5,7 @@ import SlideChild from './SlideChild';
 const SliderAltThird = () => {
     const url = 'https://fakestoreapi.com/products'
 
-    const [sneakers, setSneakers] = useState([])
+    const [product, setProduct] = useState([])
 
     useEffect(() => {
         fetchData()
@@ -24,16 +24,14 @@ const SliderAltThird = () => {
     
         axios.request(product).then(function (response) {
             console.log(response.data);
-            setSneakers(response.data)
+            setProduct(response.data)
         }).catch(function (error) {
             console.error(error);
         })
     }
     
     return (
-        <div>
-            <SlideChild props={sneakers} />
-        </div>
+        <SlideChild product={product} {...product}/>
     )
 }
 
