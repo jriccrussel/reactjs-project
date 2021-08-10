@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Birthday Project
 // import Birthday from './BirthdayReminder/Birthday'
 
@@ -21,13 +21,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Slider from "./Slider/Slider";
 // import SliderAlt from "./Slider/SliderAlt";
 // import SliderAltSecond from "./Slider/SliderAltSecond";
-import SliderAltThird from './Slider/SliderAltThird'
-import SlideChild from './Slider/SlideChild';
-import Details from './Slider/Details';
+// import SliderAltThird from './Slider/SliderAltThird'
+// import Details from './Slider/Details';
 
 // Lorem Ipsum Generator
 // import LoremContainer from './LoremGenerator/LoremContainer'
 
+// Color Generator
+import ColorGenerator from "./ColorGenerator/ColorGenerator";
 
 function App() {
   return (
@@ -55,11 +56,6 @@ function App() {
       {/* <SliderAlt /> */}
       {/* <SliderAltSecond /> */}
       {/* <Router>
-        <Route>
-          <SliderAltThird/>
-        </Route>
-      </Router>        */}
-      <Router>
         <Switch>
           <Route exact path="/">
             <SliderAltThird />
@@ -68,11 +64,13 @@ function App() {
             <Details />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
       
       {/* Lorem Ipsum Generator */}
       {/* <LoremContainer /> */}
 
+      {/* Color Generator */}
+      <ColorGenerator />
     </div>
   );
 }
