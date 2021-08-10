@@ -8,10 +8,6 @@ const SliderAltThird = () => {
     const [product, setProduct] = useState([])
 
     useEffect(() => {
-        fetchData()
-    }, [])
-
-    const fetchData = () => {
         const product =  {
             method: 'GET' ,
             url: url ,
@@ -23,15 +19,27 @@ const SliderAltThird = () => {
         }
     
         axios.request(product).then(function (response) {
-            console.log(response.data);
+            console.log(response.data)
             setProduct(response.data)
         }).catch(function (error) {
-            console.error(error);
+            console.error(error)
         })
-    }
+    }, [url])
+
+    // const fetchData = () => {
+        
+    // }
     
     return (
-        <SlideChild product={product} {...product}/>
+        <div>
+            {product.map((item) => {
+                return(
+                    <div key={item.id}>
+                        <SlideChild item={item}/>
+                    </div>
+                )
+            })}
+        </div>
     )
 }
 

@@ -1,21 +1,14 @@
 import { Link } from 'react-router-dom';
-import Details from './Details'
 
-const SlideChild = ({product}) => {
+const SlideChild = ({item}) => {
     return (
-        <div>
-            {product.map((prod) => {
-                return (
-                    <Link to='/products/:id'>
-                        <div key={prod.id} {...prod}>
-                            <img src={prod.image} alt="" className='product_img'/>
-                            <p>{prod.title}</p>
-                            <p>{prod.price}</p>
-                        </div>
-                    </Link>
-                )
-            })}
-        </div>
+        <Link to={`/products/${item.id}`}>
+            <div>
+                <img src={item.image} alt="" className='product_img'/>
+                <p>{item.title}</p>
+                <p>{item.price}</p>
+            </div>
+        </Link>
     )
 }
 

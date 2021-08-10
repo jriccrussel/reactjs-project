@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Birthday Project
 // import Birthday from './BirthdayReminder/Birthday'
 
@@ -23,6 +23,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import SliderAltSecond from "./Slider/SliderAltSecond";
 import SliderAltThird from './Slider/SliderAltThird'
 import SlideChild from './Slider/SlideChild';
+import Details from './Slider/Details';
 
 // Lorem Ipsum Generator
 // import LoremContainer from './LoremGenerator/LoremContainer'
@@ -53,10 +54,21 @@ function App() {
       {/* <Slider /> */}
       {/* <SliderAlt /> */}
       {/* <SliderAltSecond /> */}
+      {/* <Router>
+        <Route>
+          <SliderAltThird/>
+        </Route>
+      </Router>        */}
       <Router>
-        <SliderAltThird/>
-      </Router>       
-      <SliderAltThird/>
+        <Switch>
+          <Route exact path="/">
+            <SliderAltThird />
+          </Route>
+          <Route path="/products/:id">
+            <Details />
+          </Route>
+        </Switch>
+      </Router>
       
       {/* Lorem Ipsum Generator */}
       {/* <LoremContainer /> */}
