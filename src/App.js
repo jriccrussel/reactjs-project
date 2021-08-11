@@ -28,7 +28,7 @@
 // import LoremContainer from './LoremGenerator/LoremContainer'
 
 // Color Generator
-import ColorGenerator from "./ColorGenerator/ColorGenerator";
+import ColorGenerator from "./ColorGenerator/ColorGenerator"
 
 function App() {
   return (
@@ -71,6 +71,8 @@ function App() {
 
       {/* Color Generator */}
       <ColorGenerator />
+
+      
     </div>
   );
 }
