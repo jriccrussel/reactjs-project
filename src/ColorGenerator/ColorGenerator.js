@@ -8,12 +8,13 @@ const ColorGenerator = () => {
     const [color, setColor] = useState('')
     const [error, setError] = useState(false)
     const [list, setList] = useState(new Values('#f15025').all(10))
-
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         try{
             let newColors = new Values(color).all(10)
             setList(newColors)
+            setError(false)
             console.log(newColors)
         } catch (error) {
             setError(true)
