@@ -5,6 +5,7 @@ const SingleColor = ({rgb, weight, index, hexColor}) => {
     const [alert, setAlert] = useState(false)
     const bcg = rgb.join(',')
     const hex = rgbToHex(...rgb)
+    // Variable for Hex Value
     const hexValue = `#${hexColor}`
 
     // fade animation after clicking the SingleColor[Clicking Copy the HEX Color]
@@ -21,6 +22,7 @@ const SingleColor = ({rgb, weight, index, hexColor}) => {
             className={`color ${index > 10 && 'color-light'}`}
             // 'rgb(${bcg})' - change the background color
             style={{ backgroundColor: `rgb(${bcg})`}}
+            // On Click Event to copy the hex code and also would trigger the alert once its been clicked
             onClick={() => {
                 setAlert(true)
                 navigator.clipboard.writeText(hexValue)

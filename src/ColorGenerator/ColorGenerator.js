@@ -12,7 +12,9 @@ const ColorGenerator = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         try{
+            // 'newColors' variable current holder of the state or data - we pass the 'color' state to 'new Values'[ the word 'Values' from 'import Values' so they would share the same function]
             let newColors = new Values(color).all(10)
+            // data passed(the now 'newColors') on to setList
             setList(newColors)
             setError(false)
             console.log(newColors)
