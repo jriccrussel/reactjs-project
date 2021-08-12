@@ -28,7 +28,10 @@
 // import LoremContainer from './LoremGenerator/LoremContainer'
 
 // Color Generator
-import ColorGenerator from "./ColorGenerator/ColorGenerator"
+// import ColorGenerator from "./ColorGenerator/ColorGenerator"
+
+// Grocery Bud
+import GroceryBud from "./GroceryBud/GroceryBud";
 
 function App() {
   return (
@@ -70,8 +73,10 @@ function App() {
       {/* <LoremContainer /> */}
 
       {/* Color Generator */}
-      <ColorGenerator />
+      {/* <ColorGenerator /> */}
 
+      {/* Grocery Bud */}
+      <GroceryBud />
       
     </div>
   );
