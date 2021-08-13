@@ -94,6 +94,7 @@ const GroceryBud = () => {
         ))
     }
 
+    // Store sa local storage na naa sa inspect elements sa 'Application' > 'Storage' > 'Local Storage' > 'http://localhost:3000'
     useEffect(() => {
         localStorage.setItem('list', JSON.stringify(list))
     }, [list])

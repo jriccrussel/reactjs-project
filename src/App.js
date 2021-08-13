@@ -31,7 +31,10 @@
 // import ColorGenerator from "./ColorGenerator/ColorGenerator"
 
 // Grocery Bud
-import GroceryBud from "./GroceryBud/GroceryBud";
+// import GroceryBud from "./GroceryBud/GroceryBud";
+
+// Navbar
+import Navbar from './Navbar/Navbar'
 
 function App() {
   return (
@@ -76,7 +79,10 @@ function App() {
       {/* <ColorGenerator /> */}
 
       {/* Grocery Bud */}
-      <GroceryBud />
+      {/* <GroceryBud /> */}
+
+      {/* Navbar */}
+      <Navbar />
       
     </div>
   );
