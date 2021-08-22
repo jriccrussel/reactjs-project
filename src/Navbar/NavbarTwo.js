@@ -4,8 +4,9 @@ import {links, social} from '../data/data-navbar'
 import logo from './logo.svg'
 import './Navbar.scss'
 
+import Sidebar from './Sidebar'
 
-const Navbar = () => {
+const NavbarTwo = () => {
     const [showLinks, setShowLinks] = useState(false)
     
     return (
@@ -20,32 +21,32 @@ const Navbar = () => {
                         <FaBars />
                     </button>
                 </div>
-                <div className='links-container show-container'>
+                {/* <div className='links-container show-container'>
                     <ul className='links'>
-                        <li>
-                            <a href="#">home</a>
-                        </li>
-                        <li>
-                            <a href="#">about</a>
-                        </li>
-                        <li>
-                            <a href="#">contact</a>
-                        </li>
-                        <li>
-                            <a href="#">products</a>
-                        </li>
+                        {links.map((newLink) => {
+                            const {id, url, text} = newLink
+                            return (
+                                <li key={id}>
+                                    <a href={url}>{text}</a>
+                                </li>
+                            )
+                        })}
                     </ul>
-                </div>
+                </div> */}
+                <Sidebar />
                 <ul className='social-icons'>
-                    <li>
-                        <a href="https://wwww.twitter.com">
-                            <FaTwitter />
-                        </a>
-                    </li>
+                    {social.map((newSocial) => {
+                        const {id, url, icon} = newSocial
+                        return (
+                            <li key={id}>
+                                <a href={url}>{icon}</a>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         </nav>
     )
 }
 
-export default Navbar
+export default NavbarTwo

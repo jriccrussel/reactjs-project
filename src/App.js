@@ -34,7 +34,14 @@
 // import GroceryBud from "./GroceryBud/GroceryBud";
 
 // Navbar
-import Navbar from './Navbar/Navbar'
+// import Navbar from './Navbar/Navbar'
+// import NavbarTwo from './Navbar/NavbarTwo'
+// import NavToggle from "./Navbar/NavToggle";
+// import NavClassToggle from "./Navbar/NavClassToggle";
+// import NavUseRef from "./Navbar/NavUseRef";
+
+// Sidebar
+import Sidebar from "./Sidebar/Sidebar";
 
 function App() {
   return (
@@ -82,8 +89,15 @@ function App() {
       {/* <GroceryBud /> */}
 
       {/* Navbar */}
-      <Navbar />
-      
+      {/* <Navbar /> */}
+      {/* <NavbarTwo /> */}
+      {/* <NavToggle /> */}
+      {/* <NavClassToggle /> */}
+      {/* <NavUseRef /> */}
+
+      {/* Sidebar */}
+      <Sidebar />
+
     </div>
   );
 }
