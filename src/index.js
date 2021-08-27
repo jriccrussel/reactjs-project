@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
-import {AppProvider} from './Sidebar/context'
+// import {AppProvider} from './Sidebar/context'
+import {AppProvider} from './Stripe/context'
 
 ReactDOM.render(
   // <React.StrictMode>

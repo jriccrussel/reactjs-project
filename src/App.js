@@ -41,7 +41,10 @@
 // import NavUseRef from "./Navbar/NavUseRef";
 
 // Sidebar
-import Sidebar from "./Sidebar/Sidebar";
+// import Sidebar from "./Sidebar/Sidebar";
+
+// Stripe Clone
+import StripeApp from './Stripe/StripeApp'
 
 function App() {
   return (
@@ -96,7 +99,10 @@ function App() {
       {/* <NavUseRef /> */}
 
       {/* Sidebar */}
-      <Sidebar />
+      {/* <Sidebar /> */}
+
+      {/* Stripe Clone */}
+      <StripeApp />
 
     </div>
   );
