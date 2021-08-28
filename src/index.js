@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
 // import {AppProvider} from './Sidebar/context'
-import {AppProvider} from './Stripe/context'
+// import {AppProvider} from './Stripe/context'
+import {AppProvider} from './Cart/context'
 
 ReactDOM.render(
   // <React.StrictMode>

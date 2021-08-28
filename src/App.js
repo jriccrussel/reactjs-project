@@ -44,7 +44,10 @@
 // import Sidebar from "./Sidebar/Sidebar";
 
 // Stripe Clone
-import StripeApp from './Stripe/StripeApp'
+// import StripeApp from './Stripe/StripeApp'
+
+// Cart App
+import CartApp from './Cart/CartApp'
 
 function App() {
   return (
@@ -102,7 +105,10 @@ function App() {
       {/* <Sidebar /> */}
 
       {/* Stripe Clone */}
-      <StripeApp />
+      {/* <StripeApp /> */}
+
+      {/* Cart App */}
+      <CartApp />
 
     </div>
   );
