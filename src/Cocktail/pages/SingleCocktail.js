@@ -10,6 +10,7 @@ const SingleCocktail = () => {
     useEffect(() => {
         setLoading(true)
 
+        // fetching the id data to display
         const getCocktail = async () => {
             try {
                 const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
@@ -58,10 +59,12 @@ const SingleCocktail = () => {
         getCocktail()
     }, [id])
 
+    // render the Loading page
     if (loading){
         return <Loading/>
     } 
 
+    // display when it doesnt have the cocktail data
     if (!cocktail) {
         return <h2 className='section-title'>no cocktail to display</h2>
     } else {
@@ -75,7 +78,6 @@ const SingleCocktail = () => {
           ingredients,
         } = cocktail
     
-
         return (
             <section className='section cocktail-section'>
                 <Link to='/' className='btn btn-primary'>
