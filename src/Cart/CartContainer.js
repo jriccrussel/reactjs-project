@@ -2,7 +2,9 @@ import CartItem from './CartItem'
 import { useGlobalContext } from './context'
 
 const CartContainer = () => {
+    // functions coming from 'useGlobalContext' context
     const { cart, total, clearCart } = useGlobalContext()
+    
     if (cart.length === 0) {
         return (
         <section className='cart'>

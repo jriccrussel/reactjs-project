@@ -47,7 +47,10 @@
 // import StripeApp from './Stripe/StripeApp'
 
 // Cart App
-import CartApp from './Cart/CartApp'
+// import CartApp from './Cart/CartApp'
+
+// Cocktail App
+import CocktailApp from './Cocktail/CocktailApp'
 
 function App() {
   return (
@@ -108,7 +111,10 @@ function App() {
       {/* <StripeApp /> */}
 
       {/* Cart App */}
-      <CartApp />
+      {/* <CartApp /> */}
+
+      {/* Cocktail App */}
+      <CocktailApp />
 
     </div>
   );

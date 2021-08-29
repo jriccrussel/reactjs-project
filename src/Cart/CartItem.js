@@ -1,6 +1,8 @@
 import { useGlobalContext } from './context'
 const CartItem = ({ id, img, title, price, amount }) => {
+    // functions coming from 'useGlobalContext' context
     const { remove, increase, decrease, toggleAmount } = useGlobalContext()
+
     return (
         <article className='cart-item'>
             <img src={img} alt={title} />
