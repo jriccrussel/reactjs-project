@@ -50,7 +50,13 @@
 // import CartApp from './Cart/CartApp'
 
 // Cocktail App
-import CocktailApp from './Cocktail/CocktailApp'
+// import CocktailApp from './Cocktail/CocktailApp'
+
+// Markdown App
+// import MarkdownApp from './Markdown/MarkdownApp'
+
+// Random Person App
+import RandomPersonApp from './RandomPerson/RandomPersonApp'
 
 function App() {
   return (
@@ -114,8 +120,13 @@ function App() {
       {/* <CartApp /> */}
 
       {/* Cocktail App */}
-      <CocktailApp />
+      {/* <CocktailApp /> */}
 
+      {/* MarkdownApp */}
+      {/* <MarkdownApp /> */}
+
+      {/* Random Person App */}
+      <RandomPersonApp />
     </div>
   );
 }
