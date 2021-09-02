@@ -56,7 +56,10 @@
 // import MarkdownApp from './Markdown/MarkdownApp'
 
 // Random Person App
-import RandomPersonApp from './RandomPerson/RandomPersonApp'
+// import RandomPersonApp from './RandomPerson/RandomPersonApp'
+
+// Pagination App
+import PaginationApp from './Pagination/PaginationApp'
 
 function App() {
   return (
@@ -126,7 +129,12 @@ function App() {
       {/* <MarkdownApp /> */}
 
       {/* Random Person App */}
-      <RandomPersonApp />
+      {/* <RandomPersonApp /> */}
+
+      {/* Pagination App */}
+      <PaginationApp />
+
+
     </div>
   );
 }
