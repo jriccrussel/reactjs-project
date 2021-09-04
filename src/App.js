@@ -59,7 +59,10 @@
 // import RandomPersonApp from './RandomPerson/RandomPersonApp'
 
 // Pagination App
-import PaginationApp from './Pagination/PaginationApp'
+// import PaginationApp from './Pagination/PaginationApp'
+
+// Stock Photo App
+import StockPhotoApp from './StockPhoto/StockPhotoApp'
 
 function App() {
   return (
@@ -132,8 +135,8 @@ function App() {
       {/* <RandomPersonApp /> */}
 
       {/* Pagination App */}
-      <PaginationApp />
-
+      {/* <PaginationApp /> */}
+      <StockPhotoApp />
 
     </div>
   );
