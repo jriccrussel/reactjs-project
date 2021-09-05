@@ -62,7 +62,10 @@
 // import PaginationApp from './Pagination/PaginationApp'
 
 // Stock Photo App
-import StockPhotoApp from './StockPhoto/StockPhotoApp'
+// import StockPhotoApp from './StockPhoto/StockPhotoApp'
+
+// Dark Mode
+import DarkModeApp from './DarkMode/DarkModeApp'
 
 function App() {
   return (
@@ -136,7 +139,12 @@ function App() {
 
       {/* Pagination App */}
       {/* <PaginationApp /> */}
-      <StockPhotoApp />
+
+      {/* Stock Photo App */}
+      {/* <StockPhotoApp /> */}
+
+      {/* Dark Mode App */}
+      <DarkModeApp />
 
     </div>
   );
