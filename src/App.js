@@ -65,7 +65,10 @@
 // import StockPhotoApp from './StockPhoto/StockPhotoApp'
 
 // Dark Mode
-import DarkModeApp from './DarkMode/DarkModeApp'
+// import DarkModeApp from './DarkMode/DarkModeApp'
+
+// Movie Db App
+import MovieDbApp from "./MovieDb/MovieDbApp";
 
 function App() {
   return (
@@ -144,7 +147,10 @@ function App() {
       {/* <StockPhotoApp /> */}
 
       {/* Dark Mode App */}
-      <DarkModeApp />
+      {/* <DarkModeApp /> */}
+
+      {/* Movie Db App */}
+      <MovieDbApp />
 
     </div>
   );
