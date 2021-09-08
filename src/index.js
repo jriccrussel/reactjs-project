@@ -8,8 +8,11 @@ import App from './App'
 // import {AppProvider} from './Cocktail/context'
 
 // Movie DB App
-import {AppProvider} from './MovieDb/context'
-import { BrowserRouter as Router } from 'react-router-dom'
+// import {AppProvider} from './MovieDb/context'
+// import { BrowserRouter as Router } from 'react-router-dom'
+
+// Hacker News App
+import {AppProvider} from './HackerNews/context'
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -17,19 +20,19 @@ ReactDOM.render(
   // </React.StrictMode>,
 
   // you need to add provider para maka gamit ka sa custom useContext
-  // <React.StrictMode>
-  //   <AppProvider>
-  //     <App />
-  //   </AppProvider>
-  // </React.StrictMode>,
-
-  // Movie Db App na naay Router
   <React.StrictMode>
     <AppProvider>
-      <Router>
-        <App />
-      </Router>
+      <App />
     </AppProvider>
   </React.StrictMode>,
+
+  // Movie Db App na naay Router
+  // <React.StrictMode>
+  //   <AppProvider>
+  //     <Router>
+  //       <App />
+  //     </Router>
+  //   </AppProvider>
+  // </React.StrictMode>,
   document.getElementById('root')
 );

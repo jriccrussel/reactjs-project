@@ -68,7 +68,10 @@
 // import DarkModeApp from './DarkMode/DarkModeApp'
 
 // Movie Db App
-import MovieDbApp from "./MovieDb/MovieDbApp";
+// import MovieDbApp from "./MovieDb/MovieDbApp"
+
+// Hacker News App
+import HackerNewsApp from './HackerNews/HackerNewsApp'
 
 function App() {
   return (
@@ -150,7 +153,10 @@ function App() {
       {/* <DarkModeApp /> */}
 
       {/* Movie Db App */}
-      <MovieDbApp />
+      {/* <MovieDbApp /> */}
+
+      {/* Hacker News App */}
+      <HackerNewsApp />
 
     </div>
   );
