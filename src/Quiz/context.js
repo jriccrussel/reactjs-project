@@ -90,13 +90,14 @@ const AppProvider = ({ children }) => {
         setIsModalOpen(false)
     }
 
+    // SetupForm fields
     const handleChange = (e) => {
         const name = e.target.name
         const value = e.target.value
         setQuiz({ ...quiz, [name]: value })
     }
 
-
+    // SetupForm button
     const handleSubmit = (e) => {
         e.preventDefault()
         const { amount, category, difficulty } = quiz
