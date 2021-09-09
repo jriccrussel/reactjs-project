@@ -12,7 +12,10 @@ import App from './App'
 // import { BrowserRouter as Router } from 'react-router-dom'
 
 // Hacker News App
-import {AppProvider} from './HackerNews/context'
+// import {AppProvider} from './HackerNews/context'
+
+// Quiz App
+import {AppProvider} from './Quiz/context'
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -35,4 +38,4 @@ ReactDOM.render(
   //   </AppProvider>
   // </React.StrictMode>,
   document.getElementById('root')
-);
+)

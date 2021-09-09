@@ -71,7 +71,10 @@
 // import MovieDbApp from "./MovieDb/MovieDbApp"
 
 // Hacker News App
-import HackerNewsApp from './HackerNews/HackerNewsApp'
+// import HackerNewsApp from './HackerNews/HackerNewsApp'
+
+// Quiz App
+import QuizApp from "./Quiz/QuizApp";
 
 function App() {
   return (
@@ -156,7 +159,10 @@ function App() {
       {/* <MovieDbApp /> */}
 
       {/* Hacker News App */}
-      <HackerNewsApp />
+      {/* <HackerNewsApp /> */}
+
+      {/* Quiz App */}
+      <QuizApp />
 
     </div>
   );
